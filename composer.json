@@ -1,0 +1,19 @@
+{
+    "name": "rohan2388/wp-css",
+    "description": "Dynamic CSS generator.",
+	"keywords": ["rd", "css"],
+    "type": "library",
+	"license": "MIT",
+    "authors": [
+        {
+            "name": "Rohan Das",
+            "email": "rohan23dec@gmail.com"
+        }
+    ],
+    "require": {
+		"php": ">=5.4"
+	},
+	"autoload": {
+		"psr-4": {"RD\\WP\\": "src/"}
+	}
+}
