@@ -1,6 +1,6 @@
 <?php
 namespace RD\WP;
-use RD\WP\CSS_Rule;
+
 class CSS {
     /**
      * Class name
@@ -55,7 +55,7 @@ class CSS {
         else if ( $this->base_class != $base ) {
             $base = sprintf("%s %s", $this->base_class, $base);
         }
-        $rule = new RD_CSS_Rule( $base );
+        $rule = new CSS_Rule( $base );
         $this->rules[] = $rule;
         return $rule;
     }
@@ -73,5 +73,3 @@ class CSS {
         return $css;
     }
 }
-
-

@@ -1,4 +1,4 @@
-<?php 
+<?php
 namespace RD\WP;
 
 class CSS_Rule {
