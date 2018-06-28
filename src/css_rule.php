@@ -4,16 +4,19 @@ namespace RD\WP;
 class CSS_Rule {
     /**
      * Base name
+	 * @since 1.0.0
      */
     private $base = "";
 
     /**
      * Array of props
+	 * @since 1.0.0
      */
     private $props = array();
 
     /**
      * Array or query preset
+	 * @since 1.0.0
      */
     private $query_presets = array(
         'mobile' => 768
@@ -23,6 +26,7 @@ class CSS_Rule {
     /**
      * Main constructer function
      * @param   String  $base   css base
+	 * @since 1.0.0
      */
     public function __construct( $base ) {
         $this->base = $base;
@@ -31,6 +35,7 @@ class CSS_Rule {
 
     /**
      * Add css property
+	 * @since 1.0.0
      */
     public function add_prop( $prop, $value, $width = null, $important = false) {
         if ( $prop && $value ) {
@@ -57,6 +62,7 @@ class CSS_Rule {
     /**
      * Print css
      * @return  String  css style to print
+	 * @since 1.0.0
      */
     public function css() {
         $output = "";
